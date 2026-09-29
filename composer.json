@@ -1,9 +1,9 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "mehransarwar1/laravel-rest-api",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "A Laravel 12 REST API with Sanctum authentication, catalog management, and transactional orders.",
+    "keywords": ["laravel", "rest-api", "sanctum"],
     "license": "MIT",
     "require": {
         "php": "^8.2",
