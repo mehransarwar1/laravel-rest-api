@@ -15,11 +15,31 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // Demo users use the factory default password "password" (development only).
+        User::factory()->create([
+            'name' => 'Demo User',
+            'email' => 'test@example.com',
+        ]);
 
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Alex Rivera',
+            'email' => 'alex.rivera@example.com',
+        ]);
+
+        User::factory()->create([
+            'name' => 'Jordan Lee',
+            'email' => 'jordan.lee@example.com',
+        ]);
+
+        User::factory()->create([
+            'name' => 'Sam Patel',
+            'email' => 'sam.patel@example.com',
+        ]);
+
+        $this->call([
+            CategorySeeder::class,
+            ProductSeeder::class,
+            OrderSeeder::class,
         ]);
     }
 }
